@@ -1,0 +1,46 @@
+.year {
+	margin: 0 20px;
+}
+
+.footer {
+	background-color: $header-color;
+	font-size: 2rem;
+}
+
+.footer__content {
+	color: $main-color;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 1300px;
+
+	@media screen and (max-width: 650px) {
+		margin: 0 5px;
+	}
+}
+
+.rss-logo {
+	display: block;
+	height: 50px;
+	width: 135px;
+	background-image: url("./assets/rs_school_js.svg");
+	filter: invert(100%) sepia(1%) saturate(8%) hue-rotate(324deg) brightness(100%) contrast(100%);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 5px 0;
+
+	&:hover {
+		filter: invert(27%) sepia(69%) saturate(158%) hue-rotate(7deg) brightness(85%) contrast(86%);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: mix(red, blue);
+
+	&:hover {
+		filter: invert(27%) sepia(69%) saturate(158%) hue-rotate(7deg) brightness(85%) contrast(86%);
+	}
+}
